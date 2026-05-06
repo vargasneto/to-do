@@ -1,19 +1,33 @@
 {
-	"name": "to-do",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev",
-		"test": "vitest",
-		"cf-typegen": "wrangler types"
-	},
-	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "^0.12.4",
-		"@types/node": "^25.6.0",
-		"typescript": "^5.5.2",
-		"vitest": "~3.2.0",
-		"wrangler": "^4.87.0"
-	}
+  "name": "to-do",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vinext build",
+    "deploy": "vinext deploy",
+    "dev": "vinext dev",
+    "start": "vinext start",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.36.0",
+    "@cloudflare/vitest-pool-workers": "^0.12.4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-rsc": "^0.5.25",
+    "react-server-dom-webpack": "^19.2.5",
+    "typescript": "^5.5.2",
+    "vinext": "^0.0.47",
+    "vite": "^8.0.10",
+    "vitest": "~3.2.0",
+    "wrangler": "^4.88.0"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "type": "module"
 }
