@@ -1,7 +1,5 @@
+import TodoApp from "./todo-app";
+
 export default function Home() {
-	return (
-		<main>
-			<h1>To-do</h1>
-		</main>
-	);
+	return <TodoApp />;
 }

@@ -1,5 +1,7 @@
+import handler from "vinext/server/app-router-entry";
+
 export default {
-	async fetch(): Promise<Response> {
-		return new Response("Not Found", { status: 404 });
+	async fetch(request): Promise<Response> {
+		return handler.fetch(request);
 	},
 } satisfies ExportedHandler<Env>;
